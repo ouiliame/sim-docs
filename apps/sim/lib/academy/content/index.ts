@@ -1,8 +1,9 @@
 import type { Course } from '@/lib/academy/types'
 import { simFoundations } from './courses/sim-foundations'
+import { simKoans } from './courses/sim-koans'
 
 /** All published courses in display order. */
-export const COURSES: Course[] = [simFoundations]
+export const COURSES: Course[] = [simFoundations, simKoans]
 
 const bySlug = new Map(COURSES.map((c) => [c.slug, c]))
 const byId = new Map(COURSES.map((c) => [c.id, c]))
